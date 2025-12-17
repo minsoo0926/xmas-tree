@@ -52,9 +52,9 @@ int main() {
                     cout << " ";
                 }
                 for (int k = 0; k < 2 * (i + j) + 1; ++k) {
-                    if (k % GAP == 1 and (count + j + k / 2) % 3 == 0) {
+                    if (k % GAP == 1 && (count + j + k / 2) % 3 == 0) {
                         cout << "\033[31m●\033[0m";
-                    } else if (k % GAP == 1 and (count + j + k / 2) % 3 != 0) {
+                    } else if (k % GAP == 1 && (count + j + k / 2) % 3 != 0) {
                         cout << "\033[31m○\033[0m";
                     } else {
                         cout << "\033[32m@\033[0m";
