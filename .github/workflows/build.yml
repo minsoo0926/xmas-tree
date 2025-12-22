@@ -40,3 +40,4 @@ jobs:
       with:
         name: xmas-${{ matrix.os }}
         path: output/
+        retention-days: 5

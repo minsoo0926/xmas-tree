@@ -40,11 +40,12 @@ TerminalSize getTerminalSize() {
 
 int main() {
     int count = 0;
-    int MARGIN = getTerminalSize().cols / 2 - 2 * WIDTH - HEIGHT;
+    int MARGIN = 0;
     
     while (++count) {
         cout.flush();
         system("clear");
+        MARGIN = getTerminalSize().cols / 2 - 2 * WIDTH - HEIGHT;
         for (int i = 0; i < HEIGHT; ++i) {
             for (int j = 0; j < WIDTH; ++j) {
                 cout << string(MARGIN, ' ');
